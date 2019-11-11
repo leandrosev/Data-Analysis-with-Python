@@ -3,7 +3,7 @@
 # Project 1: nlp.ipynb
 Calculate the letter frequency of a file and compare it to the standart letter frequencies of the english alphabet
 
-#Project 2: stocks.ipynb
+# Project 2: stocks.ipynb
 
 1. Download from https://finance.yahoo.com/quote/IBM/history?p=IBM , IBM's stock values from 01/01/1962 up to date
 2. Find the percentage daily variance of the stock: 100*(open_value - close_value)/open_value
