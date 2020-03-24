@@ -1,0 +1,400 @@
+---
+title: "Προβλεπτική Αναλυτική"
+author: "Ευαγγελιδάκης Λέανδρος, me1924"
+date: "Μάρτιος 2020"
+output:
+github_document:
+    html_preview: false
+
+fontsize: 12pt
+---
+ 
+
+## Εργαστηριακή Άσκηση 1
+
+
+
+## Άσκηση 1
+
+Ο όγκος σφαίρας ακτίνας R δίνεται από τον τύπο
+$\frac{4}{3}*π*R^3$.
+Για σφαίρες με ακτίνες 3, 4, 5,...,20 να βρείτε τον αντίστοιχο όγκο
+χρησιμοποιώντας το βρόγχο for. Επαναλάβετε με χρήση
+διανυσμάτων.
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+```{r}
+ex1<-function(r){
+  
+  #Using for loop
+  volumes<-c()
+  i<-1
+  for (rad  in r) {
+    vol<-(4/3)*pi*(rad^3)
+    volumes[i]<-vol
+    i<-i+1
+    
+  }
+  print('Using for loop')
+  print(volumes)
+  
+  #Using vectors
+  print('Using vectors')
+  volumes<-(4/3)*pi*r^3
+  print(volumes)
+}
+
+ex1(3:20)
+
+```
+
+## Άσκηση 2
+
+Πολλαπλασιάστε όλους τους αριθμούς από το 1 μέχρι και το 200
+χρησιμοποιώντας τον βρόγχο for. Επαναλάβετε με τη βοήθεια της
+εντολής prod.
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+```{r}
+ex2<-function(r){
+  
+  p<-1
+  for (i in r){
+    p<-p*i
+  }
+  print(paste("Product using for loop:", p ))
+  print(paste("Product using prod:", prod(r) ))
+  
+}
+ex2(1:200)
+```
+
+
+## Άσκηση 3
+
+Εισάγετε στην R το παρακάτω διάνυσμα:
+2, 3, 1, 5, 6, 3, 2, 5, 7, 9, 10, 11, 9, 8
+Βρείτε το μήκος του διανύσματος, την ελάχιστη και μέγιστη τιμή του.
+Ταξινομήστε το κατά αύξουσα τάξη μεγέθους και δώστε τη σειρά
+κατάταξης τιμών. Χρησιμοποιήστε όλους τους τρόπους που διδαχθήκατε
+στις περιπτώσεις ισοπαλιών.
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+
+```{r}
+ex3<-function(input){
+  
+  print(paste("Length:", length(input) ))
+  print(paste("Min:", min(input) ))
+  print(paste("Max", max(input) ))
+  print('Sorted vector:')
+  print(sort(input))
+  print('Order:')
+  print(order(input))
+  
+}
+
+input<-c(2,3,1,5,6,3,2,5,7,9,10,11,9,8)
+ex3(input)
+
+```
+
+## Άσκηση 4
+
+Δημιουργήστε μια συνάρτηση η οποία θα δέχεται ως όρισμα ένα
+διάνυσμα x, εν συνεχεία θα το ταξινομεί κατά αύξουσα τάξη
+μεγέθους και θα υπολογίζει τη διάμεσο. 
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+
+```{r}
+ex4<-function(x){
+  
+  sorted<-sort(x)
+  print('Input vector:')
+  print(x)
+  print('Sorted vector:')
+  print(sorted)
+  print('Median:')
+  print(median(sorted))
+  
+  
+}
+
+x<-c(3,5,8,1,3,4,7,8,11,14,1,5)
+ex4(x)
+```
+
+## Άσκηση 5
+
+Δημιουργήστε μια συνάρτηση η οποία θα δέχεται ως όρισμα έναν
+τετραγωνικό πίνακα Χ. Αν ο πίνακας δεν είναι τετραγωνικός θα
+επιστρέφει μήνυμα λάθους όπως και αν ο πίνακας δεν
+αντιστρέφεται αλλιώς σε μια λίστα θα επιστρέφει την ορίζουσα και
+τον αντίστροφο του πίνακα.
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+
+
+```{r}
+ex5<-function(matrix){
+  
+  if (dim(matrix)[1]==dim(matrix)[2]){
+    print('Matrix is square')
+  }
+  else{
+    print('ERROR.Matrix is not square')
+  }
+  det<-det(matrix)
+  if (det==0){
+    print('Matrix is not invertible')
+  }
+  else{
+    print('Matrix is invertible')
+    inv<-solve(matrix)
+    output<-list(det,inv)
+    
+    print(paste('Determinant:',output[1]))
+    print('Inverted Matrix:')
+    print(output[2])
+    
+    }
+}
+
+```
+
+Εφαρμόζουμε τη συνάρτηση για τον πίνακα [3x3]:
+
+$$A = \begin{bmatrix}0.1964354 & -0.6738396 & -0.5938514\\
+-0.8700559 & -0.5422208 & -1.1817128\\
+-0.6262798 & 1.2554072 & 0.2279084
+\end{bmatrix}$$
+
+```{r}
+table<-matrix(c(0.1964354,-0.6738396,-0.5938514,-0.8700559,-0.5422208,-1.1817128,
+-0.6262798,1.2554072,0.2279084),nrow=3)
+print('Original matrix:')
+print(table)
+
+ex5(table)
+```
+
+
+## Άσκηση 6
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Θεωρούμε το σύστημα
+```{r equation, include=FALSE}
+eq <-  noquote(paste(expression("5x-3y-2z=0\\\\3x-7y+z=6\\\\-3x-2y-2z=-1")))
+```
+$$
+\begin{cases} `r eq` \end{cases}
+$$
+
+
+Να βρεθεί ο αντιστροφος και ο ανάστροφος αν υπάρχει
+Συνενώστε το διάνυσμα b σαν μία τέταρτη στήλη στον πίνακα Α.
+Καταχωρήστε το αποτέλεσμα αυτό στον πίνακα Α.
+Βρείτε τη λύση του συστήματος με χρήση της solve()
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+
+Λύνουμε το σύστημα $$Ax=b$$,
+όπου
+$$
+A = \begin{bmatrix}5 & -3 & 2\\
+3 & -7 & 1\\
+-3 & -2 & -2
+\end{bmatrix}
+$$
+και 
+
+$$
+b=\begin{bmatrix}0\\ 6\\ -1
+\end{bmatrix}
+$$
+
+```{r}
+ex6<-function(A){
+  
+  print('Coefficient matrix')
+  print(A)
+  det<-det(A)
+  
+  if(det!=0){
+    print('Matrix is invertible')
+    print('Inverted matrix:')
+    inv<-solve(A)
+    print(inv)
+    print('Transposed matrix:')
+    print(t(A))
+    b<-c(0,6,-1)
+    A<-cbind(A,c(0,6,-1))
+    print('Augmented matrix:')
+    print(A)
+    print('Solution of the system of equations:')
+    print(solve(A[1:3,1:3],A[,4]))
+  }
+}  
+
+A<-c(5,-3,-2,3,-7,1,-3,-2,-2)
+A<-matrix(A,nrow=3)
+ex6(A)
+```
+
+Όπως φαίνεται, η λύση του συστήματος είναι :
+$$
+\begin{bmatrix}x\\ y\\  z
+\end{bmatrix}=\begin{bmatrix}0.36\\ -0.92\\  -0.32
+\end{bmatrix}
+$$
+
+# Ασκήσεις στις Χρονοσειρές
+
+## Άσκηση 1
+
+Στον παρακάτω πίνακα παρουσιάζεται ο αριθμός των ατυχημάτων από το 2014
+μέχρι το 2020. Να προσδιοριστεί η εξίσωση της τάσης με τη μέθοδο της ευθείας
+ελαχίστων τετραγώνων.
+
+
+```{r echo=FALSE, layout="s-body-outset"}
+Year<-seq(2014,2020)
+Total_Crimes<-c(330.803,358.998,379.652,358.303,303.311,329.110,354.372)
+data<-as.matrix(rbind(Year,Total_Crimes))
+data
+```
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+### Αναλυτική Λύση
+
+Ευθεία ελαχίστων τετραγώνων (Τάση) :
+$$\hat{y}=b_0 + b_1*x$$
+Oι συντελεστές υπολογίζονται απο τις σχέσεις:
+
+$$ b_1 = \frac{\sum{x_iy_i-n\overline{x}\overline{y}}}{\sum{x_i^2-n \overline{x} ^2 }} $$
+και
+$$
+b_0=\overline{y}-b_1*\overline{x}
+$$
+Παρακάτω φαίνεται ο πίνακας για τον υπολογισμό των συντελεστών
+
+```{r}
+x<-Year
+y<-Total_Crimes
+n<-7
+df<-data.frame(x=x,y=y,xy=x*y,x_2=x*x)
+mean_y<-mean(df$y)
+mean_x<-mean(df$x)
+df
+```
+```{r}
+print(paste('Mean of x : ',mean_x))
+print(paste('Mean of y : ',mean_y))
+b_1<-(sum(df$xy) - n*mean_x*mean_y)/(sum(df$x_2)-n*mean_x^2)
+b_0<-mean_y - b_1*mean_x
+print(paste('Coefficients: b_1 = ',b_1,', b_0 = ',b_0))
+```
+
+
+### Υπολογισμός χρησιμοποιώντας την εντολή lm()
+
+```{r}
+model<-lm(y~x)
+model
+```
+
+H εξίσωση της ευθείας ελαχίστων τετραγώνων που προκύπτει είναι η:
+$$
+\hat{y}=5056.792-2.336x
+$$
+
+### Διάγραμμα
+```{r}
+plot(x,y,main='Yearly Law Violations in Greece. Least Squares Trend Line',pch=16,col='black',xlab='Year',ylab='Violations',type='b')
+grid()
+abline(a=b_0,b=b_1,lty=2,col='red')
+legend("topright",c("y=5056.792-2.336x"),col=c("red"), lwd=3)
+```
+
+## Άσκηση 2
+
+Στον παρακάτω πίνακα παρουσιάζεται ο αριθμός των θανατηφόρων ατυχημάτων
+από το 2012 μέχρι το 2019. Να προσδιοριστεί η εξίσωση της τάσης με τη μέθοδο
+της ευθείας ελαχίστων τετραγώνων
+
+```{r echo=FALSE, layout="s-body-outset"}
+x<-seq(2012,2019)
+y<-c(190,185,195,180,200,185,190,205)
+data<-as.matrix(rbind(x,y))
+data
+```
+
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+
+Οι συντελεστές της ευθείας ελαχίστων τετραγώνων φαίνονται παρακάτω :
+
+```{r}
+model<-lm(y~x)
+model
+```
+
+Η ευθεία ελαχίστων τετραγώνων (Τάση) είναι η :
+$$
+\hat{y}=-2688.036 +1.429x
+$$
+
+### Διάγραμμα
+```{r}
+plot(x,y,main='Deadly Accidents.Least Squares Trend Line',pch=16,col='black',xlab='Year',ylab='Accidents',type='b')
+grid()
+abline(model,col='red',lty=2)
+legend("topright",c("y=-2688.036 +1.429x"),col=c("red"), lwd=3)
+
+```
+
+## Επιπλέον άσκηση
+
+## Καμπυλόγραμμη παλινδρόμηση
+
+Να γίνει το διάγραμμα διασποράς και να βρεθεί η παραβολή ελαχίστων τετραγώνων για τα παρακάτω δεδομένα
+```{r}
+x<-seq(1,10)
+y<-c(110,70,50,38,34,32,30,35,50,60)
+as.matrix(rbind(x,y))
+```
+
+<p style="text-align:center;font-size:22px"><u>Λύση</u></p>
+
+Χρησιμοποιούμε τη μέθοδο lm() όπως και στα προηγούμενα, θέτοντας αντί για x το poly(x,2):
+```{r}
+model<-lm(y~poly(x,2))
+model
+```
+
+Η εξίσωση της καμπύλης ελαχίστων τετραγώνων είναι η 
+$$
+\hat{y}=50.90 -38.04x +61.52x^2
+$$
+
+### Διάγραμμα
+
+```{r}
+plot(x,y,main='Polynomial regression',pch=16)
+grid()
+pred<-predict(model)
+lines(1:10, pred, lwd=2, col="red")
+legend("topright",c("y=50.90 -38.04x +61.52x^2"),col=c("red"), lwd=3)
+```
+
