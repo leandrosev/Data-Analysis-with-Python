@@ -1,5 +1,5 @@
-# Projects
-Data analysis using Python
+# Data analysis using Python
+
 
 # Ex 1: nlp.ipynb
 Calculate the letter frequency of a text file and compare it to the standard letter frequencies of the english alphabet
