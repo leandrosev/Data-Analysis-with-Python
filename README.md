@@ -2,11 +2,11 @@
 
     Main libraries used:
     
-       - **Data manipulation**: numpy, pandas
+       - Data manipulation: numpy, pandas
        
-       - **Data visualization**: matplotlib, seaborn
+       - Data visualization: matplotlib, seaborn
        
-       - **Geospatial data visualization**: geopandas, folium
+       - Geospatial data visualization: geopandas, folium
          
 - - - -
 ## Personal Work
