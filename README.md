@@ -1,9 +1,12 @@
 # Data analysis using Python
 
-      Main libraries used:
-         - Data manipulation: numpy, pandas
-         - Data visualization: matplotlib,seaborn
-         - Geospatial data visualization: geopandas,folium
+    Main libraries used:
+    
+       - **Data manipulation**: numpy, pandas
+       
+       - **Data visualization**: matplotlib, seaborn
+       
+       - **Geospatial data visualization**: geopandas, folium
          
 - - - -
 ## Personal Work
