@@ -1,9 +1,19 @@
 # Data analysis using Python
+- - - -
+## Personal Work
 
-## Analyzing Greek refugee crisis.
+## 1. Analyzing Greek refugee crisis.
 
 - Kaggle link: https://www.kaggle.com/leandrosev/asylum-seekers-greece-kaggle-first-attempt
 - Data downloaded from UNHCR page. Contains info for asylum seekers from 2000 to 2018.
+- Includes:
+   - Data prerprocessing
+   - Descriptive statistics
+   - Data visualization (+ GeoSpatial plots)
+- Libraries used:
+   - numpy,pandas
+   - matplotlib,seaborn
+   - geopandas,folium
 
 
 - - - -
