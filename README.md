@@ -1,19 +1,32 @@
 # Data analysis using Python
+
+      Main libraries used:
+         - Data manipulation: numpy, pandas
+         - Data visualization: matplotlib,seaborn
+         - Geospatial data visualization: geopandas,folium
+         
 - - - -
 ## Personal Work
 
-## 1. Analyzing Greek refugee crisis.
+## 1. Greek refugee crisis.
 
 - Kaggle link: https://www.kaggle.com/leandrosev/asylum-seekers-greece-kaggle-first-attempt
 - Data downloaded from UNHCR page. Contains info for asylum seekers from 2000 to 2018.
-- Includes:
+- Tasks:
    - Data prerprocessing
    - Descriptive statistics
    - Data visualization (+ GeoSpatial plots)
-- Libraries used:
-   - numpy,pandas
-   - matplotlib,seaborn
-   - geopandas,folium
+
+
+## 2. IMDB Movie Database
+
+   - Kaggle link: https://www.kaggle.com/leandrosev/imdb-movie-data-exploratory-analysis
+   - Data from kaggle repository. Contains 1000 most popular movies on IMDB from 2006 to 2016.
+   - Tasks:
+      - Data Preprocessing
+      - Exploratory analysis
+      - Data visualization (+ wordclouds)
+   
 
 
 - - - -
