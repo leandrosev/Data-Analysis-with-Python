@@ -20,7 +20,7 @@
    - Descriptive statistics
    - Data visualization (+ GeoSpatial plots)
    
-![refugees](https://www.unhcr.org/thumb1/55c4c5246.jpg)
+![results](https://i.ibb.co/ZNJHJkx/download-3.png)
 
 
 ## 2. IMDB Movie Database
@@ -31,9 +31,8 @@
       - Data Preprocessing
       - Exploratory analysis
       - Data visualization (+ wordclouds)
-   
-![imdb](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1920px-IMDB_Logo_2016.svg.png)
 
+![imdb](https://i.ibb.co/xjxPGWV/download-4.png)
 - - - -
 ## Excercises made during MSc studies
 
