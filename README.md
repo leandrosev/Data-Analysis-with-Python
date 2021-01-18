@@ -19,6 +19,8 @@
    - Data prerprocessing
    - Descriptive statistics
    - Data visualization (+ GeoSpatial plots)
+   
+![refugees](https://www.unhcr.org/thumb1/55c4c5246.jpg)
 
 
 ## 2. IMDB Movie Database
@@ -30,7 +32,7 @@
       - Exploratory analysis
       - Data visualization (+ wordclouds)
    
-
+![imdb](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1920px-IMDB_Logo_2016.svg.png)
 
 - - - -
 ## Excercises made during MSc studies
@@ -47,7 +49,11 @@
    4. Use a statistical model to fit the data and plot it in the same plot (Scipy)
    5. Automate the above procedure 
 
+![ibm_stocks](https://i.ibb.co/K0Hs68g/ibm.png)
+
 ### Ex 3: World_bank_data.ipynb
    1. WDIEXCEL.zip containts economic metrics gathered by the World Bank for many years. Our countries of interest are four countries of our choice,but must include Greece and Germany. For all the metrics of the selected countries calculate the percentage of NaNs of each row (completeness). Also, calculate the largest set of consecutive data without NaNs, for each metric, starting from the most recent year.
    
    2. Connect to the World Bank API and gather the ten best economic metrics. Examine and calculate the correlation between them and use the best two in your opinion, to extract information about the selected countries.
+
+![wb](https://i.ibb.co/0y3TDhV/download-2.png)
