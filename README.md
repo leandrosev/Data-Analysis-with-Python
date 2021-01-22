@@ -14,7 +14,7 @@
 ## 1. Greek refugee crisis.
 
 - Kaggle link: https://www.kaggle.com/leandrosev/asylum-seekers-greece-kaggle-first-attempt
-- Data downloaded from UNHCR page. Contains info for asylum seekers from 2000 to 2018.
+- Data downloaded from official UNHCR page. Contains info about asylum seekers in Greece, from 2000 to 2018.
 - Tasks:
    - Data prerprocessing
    - Descriptive statistics
@@ -35,7 +35,7 @@
 
 ![imdb](https://i.ibb.co/xjxPGWV/download-4.png)
 - - - -
-## Excercises made during MSc studies
+## Simple excercises made during MSc studies
 
 ### Ex 1: nlp.ipynb
    - Calculate the letter frequency of a text file and compare it to the standard letter frequencies of the english alphabet
