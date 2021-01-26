@@ -21,8 +21,7 @@
    - Data visualization (+ GeoSpatial plots)
    
 ![results](https://i.ibb.co/ZNJHJkx/download-3.png)
-![map](https://www.kaggleusercontent.com/kf/16787344/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..W5_OwTaGRYEmm2PX1rWwMw.c4V2F5T2SPR076gyv9Jr-ldxFdhd_6Syyzqr1Rss272WEQ2RX2CVojmG26iZIrKrzZPVUTr7zCvX1ie-qvs0754_qFEFuFAZD36onC3K-N7cCD55QSr0SjIjVVVAZPDaibAxEye8YsFwffAZUrk2ZDwjtRuR2q2ZdRHdJ4GwVWYe7meK3u2miav6vmUGVfy5NDJg--0rz-Q3gUFERzuSkET_D0lHo9K61vmLeOURWPuyjN_h3U3AaiICp8ErEV_7gTHoNSWCjaljxGGfCdK8c7MipXDTYIAW4DbFdyAmTPfseqZK-1u0qVI09PPnKancIsXWLgdSpRSYXoSSKjMKnCT9j49r_7TFmHs4b08yvEKLNZgh9BnrwJ8ISYyisszXzw-exT_GV2d4ByAFMn_y1YI7ShJ9940D5B_q9mAq7hEOLhEEpEd8nwRGnx_LmE_4scD01YzsrdbgddZ2EusGi0e8skm255jGRqOXYJyXgbmvBFfMwch6P0lz8K0G2Py-vWyGMEXF6MLMcFIMUyjbqYEr5GHPV8ATAeOif2tujGQUsqqoVeqObfDRowAki25SCCTDmWnx0bfkepcaHHm05XDG-22lNKuTByJpqnriwaVec8_7lyvRUaVFT1L4szjgG6MlK3Nu-uM05I4QzqhLgueLuSQ2nBWkF8Stlp1Ixxg.35DYtLToDVJoQmDoKAmcsA/__results___files/__results___32_0.png)
-
+<a href="https://ibb.co/1TYqkGn"><img src="https://i.ibb.co/gJbTxZ7/results-32-0.png" alt="results-32-0" border="0" /></a>
 
 ## 2. IMDB Movie Database
 
